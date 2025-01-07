@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>2048小游戏</title>
+  <link href="style/main.css" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="meta/apple-touch-icon.png">
+  <link rel="Shortcut Icon" href="../images/ic.ico" type="image/x-icon" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="description" content="【2048在线小游戏】是一款简单的小游戏，好玩易上手，根本停不下来。" />
+</head>
+<body>
+  <div class="container">
+    <div class="heading">
+      <h1 class="title">2048</h1>
+      <div class="scores-container">
+        <div class="score-container">0</div>
+        <div class="best-container">0</div>
+      </div>
+    </div>
+
+    <div class="above-game">
+      <p class="game-intro">合并数字到达 <strong>2048 !</strong></p>
+      <a class="restart-button">新游戏</a>
+    </div>
+
+    <div class="game-container">
+      <div class="game-message">
+        <p></p>
+        <div class="lower">
+	        <a class="keep-playing-button">Keep going</a>
+          <a class="retry-button">Try again</a>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+      </div>
+
+      <div class="tile-container">
+
+      </div>
+    </div>
+
+    <p class="game-explanation">
+      <strong class="important"><a href="#" style="text-decoration:none;">如何玩：</a></strong> 用 <strong>方向键</strong> 移动方块. 当两个具有相同数字的方块接触时，它们会 <strong>合并为一个！</strong>数字到达2048即为胜利~
+    </p>
+    <hr>
+ 
+  </div>
+
+  <script src="js/bind_polyfill.js"></script>
+  <script src="js/classlist_polyfill.js"></script>
+  <script src="js/animframe_polyfill.js"></script>
+  <script src="js/keyboard_input_manager.js"></script>
+  <script src="js/html_actuator.js"></script>
+  <script src="js/grid.js"></script>
+  <script src="js/tile.js"></script>
+  <script src="js/local_storage_manager.js"></script>
+  <script src="js/game_manager.js?v=2"></script>
+  <script src="js/application.js"></script>
+	<script>
+		document.oncontextmenu = function (event){
+		if(window.event){
+		event = window.event;
+		}try{
+		var the = event.srcElement;
+		if (!((the.tagName == "INPUT" && the.type.toLowerCase() == "text") || the.tagName == "TEXTAREA")){
+		return false;
+		}
+		return true;
+		}catch (e){
+		return false;
+		}
+		}
+	</script>
+	<script>
+		document.onkeydown = function(){
+
+	    if(window.event && window.event.keyCode == 123) {
+	        alert("Hi,Welcome to here！");
+	        event.keyCode=0;
+	        event.returnValue=false;
+	    }
+	    if(window.event && window.event.keyCode == 13) {
+	        window.event.keyCode = 505;
+	    }
+	    if(window.event && window.event.keyCode == 8) {
+	        alert(str+"\n请使用Del键进行字符的删除操作！");
+	        window.event.returnValue=false;
+	    }
+		}
+	</script>
+
+    <script type="text/javascript">
+  	if (self == top) {
+		    var theBody = document.getElementsByTagName('body')[0];
+		    theBody.style.display = "block";
+		} else {
+		    top.location = self.location;
+		}
+	</script>
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?dc7c5f392985b55eaa94c4f26e653924";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+</body>
+</html>
