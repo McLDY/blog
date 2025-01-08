@@ -1,4 +1,4 @@
-p{
+p.bt{
     color: black;
     text-align: center;
     font-size: 40px;
@@ -7,4 +7,13 @@ p{
 .xyx{
     color: rgb(89,49,158);
     font-size: 25px;
+}
+p.subtitlea{
+    text-align: center;
+    color: red;
+}
+p.subtitleb{
+    text-align: center;
+    color: red;
+    font-size: 1px;
 }

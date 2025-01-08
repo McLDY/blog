@@ -1,4 +1,4 @@
-p{
+p.title{
     color: black;
     text-align: center;
     font-size: 40px;
@@ -7,6 +7,7 @@ p{
 body{
     background-color: lightblue;
 }
-.yx{
+a.yx{
     color: rgb(9,71,99);
+    text-align: center;
 }
