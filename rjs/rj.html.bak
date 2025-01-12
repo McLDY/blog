@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="../style/rj.css">
+    </head>
+    <body>
+        <div>
+            <!------------------ 功能按键 ------------------------>
+<div class="widget-header feature">
+	<span class="delete-file" >删除</span>
+	<span class="new-file" id="createfolder">新建</span>
+</div>
+<!----------------- 文件夹显示区域 -------------------->
+<div class="tab-content"
+	<div class="main">
+	
+		  <!-- 云盘内容主体区 -->
+		<div class="container">
+		
+		    <!-- 导航区 -->
+		    <div class="nav">
+		      <div class="catalog">
+		        首页
+		      </div>
+		    </div>
+		    <!--/ 导航区 -->
+		
+		    <!-- 文件内容区 -->
+			<div class="wrap-file layout-preview" id="file-container" style="left: 0px;">
+		
+		      <!-- 单个文件夹示例 -->
+		      <!--
+		      	<div class="file-panel">
+		          <span class="file-checkbox"></span>
+		          <span class="file-rename"></span>
+		          <span class="file-delete"></span>
+		        </div>
+				<div class="file-img"></div>
+				<div class="file-info">New File(1)</div>
+		        <input class="file-rename-text" type="text" value="New File(1)"> 
+		      -->
+		      </div>
+		    <!-- 文件夹内容区 -->
+		  <!--/ 云盘主体区 -->
+			</div>
+		<!--/ 页面主体部分 -->
+		<!-- 弹窗 -->
+		<div class="alert-box">
+		  <!-- 消息弹窗 -->
+		  <div class="" id="notification"><p></p><span></span></div>
+		  <!--/ 消息弹窗 -->
+		  <!-- 咨询弹窗 -->
+		  <div class="question-shadow">
+		    <div class="question"><strong></strong><p></p><span>确定</span><span>取消</span></div>
+		  </div>
+		  <!--/ 咨询弹窗 -->
+		
+		  <!-- 活动窗 -->
+		  <div class="active-window">
+		    <div>
+		    </div>
+		  </div>
+		  <!--/ 活动窗 -->
+		  <!-- 遮罩层 -->
+		  <div class="shadow"></div>
+		  <!--/ 遮罩层 -->
+		</div>
+	</div>
+</div>
+
+        </div>
+    </body>
+</html>
